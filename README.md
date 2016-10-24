@@ -1,9 +1,7 @@
 # TELEMEDICINA 2016.1
 Projeto para AB2 da materia Telemedicina
 
-#Grupo: 
-  Elivelton Cristiano 
-  Fellipe Pereira
+#Grupo: Elivelton Cristiano, Fellipe Pereira.
 
 
 
