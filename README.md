@@ -1,32 +1,41 @@
-# TELEMEDICINA 2016.1
- * Projeto para AB2 da materia Telemedicina
+# Fundamentos em Informática Médica e Telemedicina
+ * Prof. Dr. Marcelo Costa Oliveira
 
 # Grupo: 
-  * Elivelton Cristiano
-  * Fellipe Pereira.
-  
-#Professor: 
-  * Marcelo Costa Oliveira
- 
+  * Elivelton Cristiano;
+  * Davis Fellipe.
+
 # Objetivo:
  * Extração de atributos de imagens contendos nodulos pulmonares.
    * Imagem Tomografia de Computadorizada
    * Nódulo de Câncer de Pulmão
    * Nódulo foi Segmentado Manualmente
    * Fomato: PNG
-   * Disponível em:
-      * https://dl.dropboxusercontent.com/u/11507361/noduloSegmentado.tar
 
 # Ferramenta:
  Fizemos uso da ferramenta FIJI em conjunto com o plugin Trainable Weka Segmentation.
-  * Fiji pode ser obtido atraves:
    * http://fiji.sc/#download
- 
-# Passs-a-passo:
-  * 1º - Iniciamos o programa.
-  * 2º - Abrimos o plugin Trainable Weka Segmentation, atrves do menu Plugins>Segmentação.
 
+# Atributos Obtidos:
+  * Entropia;
+  * Variância;
+  * Média;
+  * Mediana;
+  * Hessiana;
+  * Projeção da Membrana;
+  * Gaussian Blur.
 
+# Metodologia:
+  * Iniciamos o FIji;
+  * Abrimos uma fatia central do nódulo (nodulo20.png);
+  * Abrimos o plugin Trainable Weka Segmentation;
+  * Refazemos a segmentação, é necessario para obter os atributos através do plugin;
+    * Classe 1 representa o nódulo;
+    * Classe 2 representa o background;
+    * Configuramos os atributos que desejamos visualizar em "Settings";
+    * Clicamos em 'Train Classifier' para concluir a segmentação;
+    * Salvamos o arquivo.
+  * 
 
 
 
