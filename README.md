@@ -1,6 +1,11 @@
 # TELEMEDICINA 2016.1
 Projeto para AB2 da materia Telemedicina
 
+# Grupo:
+  #Elivelton Cristiano
+  #Fellipe Pereira
+
+
 
 run("Trainable Weka Segmentation");selectWindow("Trainable Weka Segmentation v3.2.1");
 
