@@ -26,8 +26,9 @@
   * Gaussian Blur.
 
 # Metodologia:
+
   * Iniciamos o FIji;
-  * Abrimos uma fatia central do nódulo (nodulo20.png);
+  * Abrimos uma fatia central do nódulo ([nodulo20.png](https://github.com/EliveltonCristiano/Telemedicina/blob/master/nodulo20.png));
   * Abrimos o plugin Trainable Weka Segmentation;
   * Refazemos a segmentação, é necessario para obter os atributos através do plugin;
     * Classe 1 representa o nódulo;
@@ -35,28 +36,12 @@
     * Configuramos os atributos que desejamos visualizar em "Settings";
     * Clicamos em 'Train Classifier' para concluir a segmentação;
     * Salvamos o arquivo.
-  * 
-
-
-
-# MACRO PARA OBTENÇÂO DOS PROCEDIMENTOS 
-
-run("Trainable Weka Segmentation");selectWindow("Trainable Weka Segmentation v3.2.1");
-
-selectWindow("Trainable Weka Segmentation v3.2.1");
-call("trainableSegmentation.Weka_Segmentation.addTrace", "0", "1");
-call("trainableSegmentation.Weka_Segmentation.addTrace", "0", "1");
-call("trainableSegmentation.Weka_Segmentation.addTrace", "1", "1");
-call("trainableSegmentation.Weka_Segmentation.addTrace", "1", "1");
-call("trainableSegmentation.Weka_Segmentation.trainClassifier");
-call("trainableSegmentation.Weka_Segmentation.setFeature", "Variance=true");
-call("trainableSegmentation.Weka_Segmentation.setFeature", "Mean=true");
-call("trainableSegmentation.Weka_Segmentation.setFeature", "Maximum=true");
-call("trainableSegmentation.Weka_Segmentation.setFeature", "Median=true");
-call("trainableSegmentation.Weka_Segmentation.setFeature", "Neighbors=true");
-call("trainableSegmentation.Weka_Segmentation.saveData", "C:\\Users\\Elivelton\\Desktop\\53454cc3e4b05911cd6db50049929\\data1.arff");
-call("trainableSegmentation.Weka_Segmentation.launchWeka");
-
+    ![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/01-segmentacao.png)
+  * Abrimos o Weka explorer, carregamos arquivo .arff salvo anteriormente e temos acesso aos atributos;
+  
+# Código 
+Podemos automatizar a obtenção desses atributos através da criação de macros.
+  * Obs.: Em algumaspartes do código contem diretórios locais, caso for rodar o código, alterar para diretórios de sua preferencia
 
 # FONTES: 
 
