@@ -2,8 +2,8 @@
 Projeto para AB2 da materia Telemedicina
 
 # Grupo: 
-  *Elivelton Cristiano,
-   *Fellipe Pereira.
+  * Elivelton Cristiano
+  * Fellipe Pereira.
 
 
 
