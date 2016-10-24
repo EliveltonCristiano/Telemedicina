@@ -13,8 +13,8 @@
    * Fomato: PNG
 
 # Ferramenta:
- Fizemos uso da ferramenta FIJI em conjunto com o plugin Trainable Weka Segmentation.
-   * http://fiji.sc/#download
+Fizemos uso da ferramenta FIJI em conjunto com o plugin Trainable Weka Segmentation.
+  * http://fiji.sc/#download
 
 # Atributos Obtidos:
   * Entropia;
@@ -26,8 +26,7 @@
   * Gaussian Blur.
 
 # Metodologia:
-
-  * Iniciamos o FIji;
+  * Iniciamos o Fiji;
   * Abrimos uma fatia central do nódulo ([nodulo20.png](https://github.com/EliveltonCristiano/Telemedicina/blob/master/nodulo20.png));
   * Abrimos o plugin Trainable Weka Segmentation;
   * Refazemos a segmentação, é necessario para obter os atributos através do plugin;
@@ -40,9 +39,36 @@
   * Abrimos o Weka explorer, carregamos arquivo .arff salvo anteriormente e temos acesso aos atributos;
   
 # Código 
-Podemos automatizar a obtenção desses atributos através da criação de macros.
-  * Obs.: Em algumaspartes do código contem diretórios locais, caso for rodar o código, alterar para diretórios de sua preferencia
+Podemos automatizar a obtenção desses atributos através da criação de macros.  
+[noduloMacro.ijm](https://github.com/EliveltonCristiano/Telemedicina/blob/master/noduloMacro.ijm)
+  
+  * Obs.: Em algumas partes do código contem diretórios locais, caso for rodar o código, alterar para diretórios de sua preferência.
+
+# Resultados
+
+ * Hessiana:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/02resulthessian.png)
+
+ * Gaussian Blur:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/03resultgaussian.png)
+
+ * Variância:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/04resultvariance.png)
+
+ * Mediana:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/05medianresult.png)
+
+ * Entropia:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/06entropyresult.png)
+
+ * Média:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/07meanresult.png)
+
+ * Projeção da Membrana:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/08membraneprojresult.png)
 
 # FONTES: 
 
-  * http://imagej.net/Trainable_Weka_Segmentation#Introduction
+  * http://imagej.net/Introduction_into_Macro_Programming
+  * http://imagej.net/Trainable_Weka_Segmentation
+
