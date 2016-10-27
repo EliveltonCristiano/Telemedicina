@@ -30,8 +30,6 @@ Fizemos uso da ferramenta FIJI em conjunto com o plugin Trainable Weka Segmentat
   * Abrimos uma fatia central do nódulo ([nodulo20.png](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/nodulo20.png));
   * Abrimos o plugin Trainable Weka Segmentation;
   * Refazemos a segmentação, é necessario para obter os atributos através do plugin;
-    * Classe 1 representa o nódulo;
-    * Classe 2 representa o background;
     * Configuramos os atributos que desejamos visualizar em "Settings";
     * Clicamos em 'Train Classifier' para concluir a segmentação;
     * Salvamos o arquivo. ([nodulo.arff](https://github.com/EliveltonCristiano/Telemedicina/blob/master/nodulo.arff))
