@@ -6,7 +6,7 @@
   * Davis Fellipe.
 
 ## Objetivo:
- * Extração de atributos de imagens contendos nodulos pulmonares.
+ * Extração de atributos de imagens contendos nódulos pulmonares.
    * Imagem Tomografia de Computadorizada
    * Nódulo de Câncer de Pulmão
    * Nódulo foi Segmentado Manualmente
@@ -17,27 +17,35 @@ Fizemos uso da ferramenta FIJI em conjunto com o plugin Trainable Weka Segmentat
   * http://fiji.sc/#download
 
 ## Atributos Obtidos:
-  * Entropia;
-  * Variância;
-  * Média;
-  * Mediana;
   * Hessiana;
+  * Gaussian Blur;
+  * Variância;
+  * Mediana;
+  * Entropia;
+  * Média;
   * Projeção da Membrana;
-  * Gaussian Blur.
+
+  * Difusão Anisotrópica (*);
+  * Filtro Sobel (*);
+  * Filtro de Kuwahara (*);
+  * Função Lipschitz (*);
+  * Diferenças de Glaussians (*);
+
+(*) - Novos atributos.
+A descrição de cada atributo pode ser encontrado na documentação do plugin (link nas referências).
 
 ## Metodologia:
   * Iniciamos o Fiji;
-  * Abrimos uma fatia central do nódulo ([nodulo20.png](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/nodulo20.png));
+  * Abrimos uma fatia central do nódulo: ([nodulo20.png](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/nodulo20.png));
   * Abrimos o plugin Trainable Weka Segmentation;
-  * Refazemos a segmentação, é necessario para obter os atributos através do plugin;
+  * Treinamos os classificadores para obter os atributos do nódulo;
+    * Utilizamos o classificador FastRandomForest, que é o padrão para o plugin;
     * Configuramos os atributos que desejamos visualizar em "Settings";
-    * Clicamos em 'Train Classifier' para concluir a segmentação;
-    * Salvamos o arquivo. ([nodulo.arff](https://github.com/EliveltonCristiano/Telemedicina/blob/master/nodulo.arff))
+    * Clicamos em 'Train Classifier' para concluir;
+    * Salvamos o classificador [classifier.model] e os dados dessa instância ([nodulo.arff](https://github.com/EliveltonCristiano/Telemedicina/blob/master/nodulo.arff)).
     ![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/01-segmentacao.png)
     
-    ![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/result.png)
-    
-  * Abrimos o Weka explorer, carregamos arquivo .arff salvo anteriormente e temos acesso aos atributos;
+  * Abrimos o Weka explorer, carregamos arquivo .arff salvo anteriormente e temos acesso aos atributos.
   
 ## Código 
 Podemos automatizar a obtenção desses atributos através da criação de macros.  
@@ -48,7 +56,6 @@ Podemos automatizar a obtenção desses atributos através da criação de macro
 ## Resultados
 Abaixo estão os resultados obtidos para cada atributo, não conseguimos automatizar a obtenção destes, porém o Weka explorer oferece uma interface relativamente amigável para sua visualização.
 
-A cor azul representa a classe 1 (Nódulo), a cor vermelha representa a classe 2 (Background)
  * Hessiana:
 ![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/02resulthessian.png)
 
