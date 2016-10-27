@@ -37,7 +37,7 @@ A descrição de cada atributo pode ser encontrado na documentação do plugin (
   * Iniciamos o Fiji;
   * Abrimos uma fatia central do nódulo: ([nodulo20.png](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/nodulo20.png));
   * Abrimos o plugin Trainable Weka Segmentation;
-  * Treinamos os classificadores para obter os atributos do nódulo;
+  * Treinamos o classificador para obter os atributos do nódulo;
     * Utilizamos o classificador FastRandomForest, que é o padrão para o plugin;
     * Configuramos os atributos que desejamos visualizar em "Settings";
     * Clicamos em 'Train Classifier' para concluir;
