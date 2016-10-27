@@ -24,7 +24,6 @@ Fizemos uso da ferramenta FIJI em conjunto com o plugin Trainable Weka Segmentat
   * Entropia;
   * Média;
   * Projeção da Membrana;
-
   * Difusão Anisotrópica (*);
   * Filtro Sobel (*);
   * Filtro de Kuwahara (*);
@@ -76,6 +75,21 @@ Abaixo estão os resultados obtidos para cada atributo, não conseguimos automat
 
  * Projeção da Membrana:
 ![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/08membraneprojresult.png)
+
+ * Difusão Anisotrópica:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/09difanisotrpic.png)
+
+ * Filtro Sobel:
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/10sobelresult.png)
+ 
+ * Filtro de Kuwahara (*);
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/11cuwahararesult.png)
+  
+ * Função Lipschitz (*);
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/12lipschitz_true_true_result.png)
+ 
+ * Diferenças de Glaussians (*);
+![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/13diference_of_gaussiansresult.png)
 
 ## FONTES: 
   * http://imagej.net/Introduction_into_Macro_Programming
