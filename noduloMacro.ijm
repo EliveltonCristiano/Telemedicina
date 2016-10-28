@@ -17,8 +17,9 @@ call("trainableSegmentation.Weka_Segmentation.setFeature", "Entropy=true");
 //aplicando o treinamento
 call("trainableSegmentation.Weka_Segmentation.trainClassifier");
 
-//salvando arquivo
-call("trainableSegmentation.Weka_Segmentation.saveData", "C:\\Users\\Fellipe\\Documents\\telemedicina\\nodulo.arff");
+//salvando
+call("trainableSegmentation.Weka_Segmentation.saveData", "C:\\Users\\Fellipe\\Documents\\telemedicina\\data.arff");
+call("trainableSegmentation.Weka_Segmentation.saveClassifier", "C:\\Users\\Fellipe\\Documents\\telemedicina\\classifier.model");
 
 //abrindo o Weka explorer
 call("trainableSegmentation.Weka_Segmentation.launchWeka");
