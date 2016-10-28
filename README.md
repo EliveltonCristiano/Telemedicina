@@ -41,7 +41,7 @@ A descrição de cada atributo pode ser encontrado na documentação do plugin (
     * Utilizamos o classificador FastRandomForest, que é o padrão para o plugin;
     * Configuramos os atributos que desejamos visualizar em "Settings";
     * Clicamos em 'Train Classifier' para concluir;
-    * Salvamos o classificador [classifier.model] e os dados dessa instância ([nodulo.arff](https://github.com/EliveltonCristiano/Telemedicina/blob/master/nodulo.arff)).
+    * Salvamos o classificador ([classifier.model](https://github.com/EliveltonCristiano/Telemedicina/blob/master/classifier.model)) e os dados dessa instância ([data.arff](https://github.com/EliveltonCristiano/Telemedicina/blob/master/data.arff)).
     ![alt tag](https://github.com/EliveltonCristiano/Telemedicina/blob/master/imagens/01-segmentacao.png)
     
   * Abrimos o Weka explorer, carregamos arquivo .arff salvo anteriormente e temos acesso aos atributos.
